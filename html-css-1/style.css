@@ -112,5 +112,27 @@ span .content-text {
     margin: 15px;
     display: flex;
     float: left;
+}
 
+
+.lower-content p {
+    float: left;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box4 {
+    float: right;
+    background: black;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+}
+
+footer {
+    background: #3A3A56;
+    height: 120px;
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
 }
