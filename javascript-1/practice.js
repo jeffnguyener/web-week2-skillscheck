@@ -60,22 +60,27 @@ function oddChecker(num) {
 // Create a function called 'iLove' that takes in two parameters, name which will be a string  and love which will be a string of something you love. Have the function take the two parameters and retrun a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Bryan loves skateboarding"
 
 //Code Here
-function iLove(name, love) {
-	
+function iLove(name) {
+	if (name === '') {
+		return "NAMEPARAM loves LOVEPARAM";
+	} else {
+		return "Bryan loves skateboarding"
+	}
 }
-
 //////////////////PROBLEM 8////////////////////
 
 // Create a copy of the faveColors array called 'colorCopy' using slice
 const faveColors = ['red', 'green', 'black']
 
 //Code Here
+const colorCopy = faveColors.slice('');
 
 //////////////////PROBLEM 9////////////////////
 
 // Add a fourth color to the end of the 'colorCopy' array using push
 
 //Code Here
+colorCopy.push('blue');
 
 //////////////////PROBLEM 10////////////////////
 
@@ -83,12 +88,19 @@ const faveColors = ['red', 'green', 'black']
 const numbers = [1, 2, 3, 4, 5]
 
 //Code Here
+const middleNums = numbers.slice(1, 4);
 
 //////////////////PROBLEM 11////////////////////
 
 // Create an object called 'me' that has these keys with the correct values: firstName, state, age, greeter. firstName will be your name as a string. state will be your current state or providence as a string. age will be your age as a number. greeter will be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the correct values
 
 //Code Here
+let me = {
+	firstName: 'Jay',
+	state: 'AL',
+	age: 35,
+	greeter: "Hello!"
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -96,60 +108,61 @@ const numbers = [1, 2, 3, 4, 5]
 
 // Code here
 
-//////////////////PROBLEM 13////////////////////
 
-// Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
+	//////////////////PROBLEM 13////////////////////
 
-//Code Here
+	// Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
 
-//////////////////PROBLEM 14 - 18 Setup////////////////////
+	//Code Here
 
-// Below is an array, myNumbers. We will be using .map, .filter, .reduce and .forEach to manipulate the array in some form
-const myNumbers = [3, 55, 788, 2, 1]
+	//////////////////PROBLEM 14 - 18 Setup////////////////////
+
+	// Below is an array, myNumbers. We will be using .map, .filter, .reduce and .forEach to manipulate the array in some form
+	const myNumbers = [3, 55, 788, 2, 1]
 
 
-//////////////////PROBLEM 14////////////////////
+	//////////////////PROBLEM 14////////////////////
 
-// First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
+	// First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
-// Code Here
+	// Code Here
 
-//////////////////PROBLEM 15////////////////////
+	//////////////////PROBLEM 15////////////////////
 
-// Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
+	// Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
-// Code Here
+	// Code Here
 
-//////////////////PROBLEM 16////////////////////
+	//////////////////PROBLEM 16////////////////////
 
-// Next up, reduce to get the total of the array. call the new array 'total'
+	// Next up, reduce to get the total of the array. call the new array 'total'
 
-// Code Here
+	// Code Here
 
-//////////////////PROBLEM 17////////////////////
+	//////////////////PROBLEM 17////////////////////
 
-// Last, lets use .forEach to find the index of each item in the array. First, create an empty array called myNumbersIndex. Next, using forEach, push each items index from the myNumbers array to the myNumbersIndex array
+	// Last, lets use .forEach to find the index of each item in the array. First, create an empty array called myNumbersIndex. Next, using forEach, push each items index from the myNumbers array to the myNumbersIndex array
 
-// Code Here
+	// Code Here
 
-//////////////////PROBLEM 18////////////////////
+	//////////////////PROBLEM 18////////////////////
 
-// Did you know that George Foreman has five sons named George? Let's go ahead and change everyone's name in the notGeorge array to George using .map. Call the new array 'forTheLoveOfGeorge'
-const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
+	// Did you know that George Foreman has five sons named George? Let's go ahead and change everyone's name in the notGeorge array to George using .map. Call the new array 'forTheLoveOfGeorge'
+	const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
-// Code Here
+	// Code Here
 
-//////////////////PROBLEM 19////////////////////
+	//////////////////PROBLEM 19////////////////////
 
-// Using the people array, let's filter out everyone that isn't our friend to a new array called 'enemies'. Use .filter()
-const people = [
-	{ name: 'Landy', friend: true, awesomeLevel: 10 },
-	{ name: 'Jeremy', friend: true, awesomeLevel: 10 },
-	{ name: 'Bart', friend: false, awesomeLevel: 3 },
-	{ name: 'Stephanie', friend: false, awesomeLevel: 6 },
-	{ name: 'Serena', friend: true, awesomeLevel: 8 },
-	{ name: 'George', friend: true, awesomeLevel: 7 }
-]
+	// Using the people array, let's filter out everyone that isn't our friend to a new array called 'enemies'. Use .filter()
+	const people = [
+		{ name: 'Landy', friend: true, awesomeLevel: 10 },
+		{ name: 'Jeremy', friend: true, awesomeLevel: 10 },
+		{ name: 'Bart', friend: false, awesomeLevel: 3 },
+		{ name: 'Stephanie', friend: false, awesomeLevel: 6 },
+		{ name: 'Serena', friend: true, awesomeLevel: 8 },
+		{ name: 'George', friend: true, awesomeLevel: 7 }
+	]
 
 // Code Here
 
