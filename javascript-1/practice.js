@@ -107,13 +107,21 @@ let me = {
 // Create a function called 'bigOrSmall' that takes in one parameter, arr. Create a new array inside of bigOrSmall called 'answers'. Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
 
 // Code here
-
+function bigOrSmall(arr) {
+	
+}
 
 	//////////////////PROBLEM 13////////////////////
 
 	// Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
 
 	//Code Here
+function arrayReverser(arr) {
+	var reversed = [i];
+	for(let i = 0; i < arr.reversed; i++) {
+	}
+	return(reversed);
+}	
 
 	//////////////////PROBLEM 14 - 18 Setup////////////////////
 
@@ -126,12 +134,17 @@ let me = {
 	// First, let's use .map to create a new array that doubles each number. Call the new array 'doubled'
 
 	// Code Here
+	const doubled = myNumbers.map(function(num) {
+		return num * 2
+	});
 
 	//////////////////PROBLEM 15////////////////////
 
 	// Now lets use .filter to only get the nubmer(s) greater than 100. Call the new array 'filtered'
 
 	// Code Here
+
+
 
 	//////////////////PROBLEM 16////////////////////
 
@@ -152,6 +165,8 @@ let me = {
 
 	// Code Here
 
+
+
 	//////////////////PROBLEM 19////////////////////
 
 	// Using the people array, let's filter out everyone that isn't our friend to a new array called 'enemies'. Use .filter()
@@ -165,9 +180,12 @@ let me = {
 	]
 
 // Code Here
+const enemies = people.filter(people => people.friend > false);
+
 
 //////////////////PROBLEM 20////////////////////
 
 // Using the people array above, let's get a total of the awesomeLevel from all the people. Call the new array 'totallyAwesome'. Use .reduce()
 
 // Code Here
+let totallyAwesome = people.reduce(people.awesomeLevel => 0);
